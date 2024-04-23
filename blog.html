@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html class="bg-white" lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Blog</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/daisyui@4.10.2/dist/full.min.css"
+            rel="stylesheet" type="text/css" />
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body class="text-center">
+        <h1 class="mt-5 mb-5 text-4xl font-bold text-black">Questions and
+            Answers</h1>
+        <div class="mx-2">
+            <div class="collapse collapse-arrow bg-base-200 mb-3">
+                <input type="radio" name="my-accordion-2" checked="checked" />
+                <div class="collapse-title text-xl font-medium">
+                    Discuss the scope of Var, Let, and Const.
+                </div>
+                <div class="collapse-content">
+                    <p>
+                        <p> 1. var:
+                            Function Scope: Variables declared with var are
+                            function-scoped. They are accessible throughout the
+                            function in which they are declared, including any
+                            nested functions.
+                            No Block Scope: Unlike let and const, var doesn't
+                            have
+                            block scope. It means variables declared with var
+                            are
+                            not limited to the block in which they are declared
+                        </p>
+                        <p>2. let:
+                            Block Scope: Variables declared with let are
+                            block-scoped. They are limited to the block in which
+                            they are declared, such as if statements, loops, or
+                            any
+                            block enclosed by curly braces {}.
+                            No Re-declaration: You cannot re-declare a variable
+                            with
+                            let in the same scope. However, you can re-assign
+                            its
+                            value.
+                        </p>
+                        <p>3. const:
+                            Block Scope: Like let, variables declared with const
+                            are
+                            block-scoped.
+                            Constant Value: Variables declared with const are
+                            constant. Their value cannot be changed once
+                            assigned.
+                            However, it's important to note that for objects and
+                            arrays, the reference to the object or array remains
+                            constant, but the contents can still be modified.
+                        </p>
+                    </p>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow bg-base-200 mb-3">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">
+                    Tell us the use cases of null and undefined.
+                </div>
+                <div class="collapse-content">
+                    <p>
+                        <p>null:
+                            Explicitly Set Absence of Value: null is used to
+                            explicitly set a variable to a value that indicates
+                            no
+                            value. It represents the intentional absence of any
+                            object value.
+                            As a Sentinel Value: Sometimes, null is used as a
+                            sentinel value to represent an "empty" state or to
+                            signify that a variable has not been assigned a
+                            value
+                            yet.
+                        </p>
+
+                        <p>undefined:
+                            Default Value: In JavaScript, variables that are
+                            declared but not initialized automatically have the
+                            value undefined. It's the default value assigned to
+                            variables until they are explicitly assigned a
+                            value.
+                            Indeterminate State: Functions that don't explicitly
+                            return a value return undefined.
+                            Property Access: When accessing an object property
+                            that
+                            doesn't exist, JavaScript returns undefined.
+                        </p>
+                    </p>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow bg-base-200 mb-3">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">
+                    What do you mean by REST API?
+                </div>
+                <div class="collapse-content">
+                    <p>
+                        <p>REST API means Representational State Transfer Application
+                        Programming Interface.</p>
+                        <p>REST is an architectural style for designing networked
+                        applications. It relies on a stateless, client-server
+                        communication protocol, typically over HTTP.
+                    </p>
+                </p>
+                </div>
+            </div>
+
+            <div>
+                <button id="backButton" class="btn btn-success">Back</button>
+            </div>
+        </div>
+
+        <script>
+        const backButton = document.getElementById('backButton');
+        backButton.addEventListener('click', () => {
+            window.location.href = 'index.html';
+        });
+    </script>
+
+    </body>
+</html>

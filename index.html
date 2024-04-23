@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html class="bg-white" lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PHero-tube</title>
+        <!-- Css Link -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/daisyui@4.10.2/dist/full.min.css"
+            rel="stylesheet" type="text/css" />
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+
+    <body>
+
+        <header>
+            <div class="pt-5 navbar">
+                <div class="navbar-start">
+                    <img class="btn btn-ghost text-xl" src="/images/Logo.png" alt="">
+                  
+                </div>
+
+                <div class="">
+                    <a id="sort" class="btn py-2 px-10 border-none bg-slate-400 hover:bg-slate-600 text-white">Sort by View</a>
+                </div>
+
+                <div class="navbar-end">
+                    <a id="blog" class="btn py-1 px-5 border-none bg-red-700 hover:bg-red-900 text-white">Blog</a>
+                </div>
+            </div>
+
+            <div class="py-5">
+                <!-- add horizontal line -->
+                <hr>
+
+            <!-- Space to add the dynamic Buttons -->
+            <div id="categoryButtons" class="text-center mt-4 mb-5">
+
+
+            </div>
+
+            </div>
+            
+        </header>
+
+        <main>
+
+            <section id="card-place" class="mx-2 mb-5">
+                <div id="card-container" class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5">
+                   <!-- Append Child Div -->
+
+
+                </div>
+            </section>
+
+        </main>
+
+        <footer>
+
+        </footer>
+        <script src="js/tube.js"></script>
+    </body>
+   
+</html>
+
+
+
